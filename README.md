@@ -2,7 +2,7 @@
 
 A messaging tool for the terminal
 
-*Note: Please do only use this tool for fun, becasue it's made by a stupid 12 y.o.*
+*Note: Please do only use this tool for fun, becasue it's made by a stupid 12 year old.*
 
 ## How PiMessages works:
 
