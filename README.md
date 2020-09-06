@@ -59,6 +59,7 @@ If somebody is getting on your nerves, you can ignore, and un-ignore him with th
 - See all unread messages: ```pimessages inbox```
 - Get info about account: ```pimessages account-info```
 - Change your current password: ```pimessages pw```
+- Display this README: ```pimessages help``` or ```pimessages info```
 
 ## Usage of the Rest Api:
 
