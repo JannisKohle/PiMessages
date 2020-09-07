@@ -93,14 +93,22 @@ elif args[0] == "send":
 
     elif len(args) == 3:
         if args[1] == "-m" or args[1] == "--message":
-            pass
+            message = args[2]
+
         else:
             print(usage)
     else:
         print(usage)
 
 elif args[0] == "chat":
-    pass
+    args = args[1:]
+
+    if len(args) == 1:
+        username = args[0]
+
+    else:
+        print(usage)
+
 elif args[0] == "ignore":
     pass
 elif args[0] == "unignore":
