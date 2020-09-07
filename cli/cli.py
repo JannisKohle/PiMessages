@@ -4,7 +4,46 @@ import sys
 args = sys.argv[1:]
 
 if args[0] == "signup":
-    pass
+    args = args[1:]
+    usage = "Type 'pimessages help' for usage"
+
+    if len(args) == 0: # no more args
+        username = input("Username: ")
+        password = input("Password: ")
+
+    elif len(args) == 2:
+        if args[0] in ["-un", "--username"]:
+            username = args[1]
+            password = input("Password: ")
+
+        elif args[0] in ["-pw", "--password"]:
+            password = args[1]
+            username = input("Username: ")
+
+        else:
+            print(usage)
+
+    elif len(args) == 4:
+        if args[0] in ["-un", "--username"]:
+            if args[2] in ["-pw", "--password"]:
+                username = args[1]
+                password = args[3]
+
+            else:
+                print(usage)
+
+        elif args[0] in ["-pw", "--password"]:
+            if args[2] in ["-un", "--username"]:
+                username = args[3]
+                password = args[1]
+
+            else:
+                print(usage)
+        else:
+            print(usage)
+    else:
+        print(usage)
+
 elif args[0] == "login":
     pass
 elif args[0] == "send":
