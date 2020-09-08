@@ -1,6 +1,6 @@
 # PiMessages
 
-A messaging tool for the terminal; written in C, Python and Node.js
+A messaging tool for the terminal; written in Python and Node.js
 
 *Note: Please do only use this tool for fun, becasue it's made by a stupid 12 year old.*
 
