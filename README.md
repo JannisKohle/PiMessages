@@ -61,9 +61,14 @@ If somebody is getting on your nerves, you can ignore, and un-ignore him with th
 - Change your current password: ```pimessages pw```
 - Display this README: ```pimessages help``` or ```pimessages info```
 
-## Usage of the Rest Api:
+## The Rest Api:
 
-...
+### Rest Api Endpoints:
+
+- ```/accounts```
+- ```/accounts/:username```
+- ```/accounts/:username/ignoredUsers```
+- ```/accounts/:username/inbox```
 
 ## Setup:
 
